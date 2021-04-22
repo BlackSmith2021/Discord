@@ -1,6 +1,29 @@
+import random
+
 settings = {
-    'token': 'ODE4NTE2MzUwODU1MTUxNjYw.YEZMwQ.tN4cEikDayc13A-Zb1aVCGeLwC0',
+    'token': 'token',
     'bot': 'Kulpanik',
     'id': 818516350855151660,
-    'prefix': '- hello'
+    'prefix': '-'
 }
+
+class Reaction():
+    def __init__(self):
+        self.alex = [
+    "Мой создатель рассказывал о Вас, Великий Магистр",
+    "Мемы гачи мучи, это нормально",
+    "Хорошо, что Вы здесь. Руслан затопил объектом rect два этажа",
+    "Я думал что создан для чего то большего, а не вот это вот все",
+]
+        self.rus = ['Я "благодарен" тебе за возможность кидать рандомные фразы в чате из двух человек',
+              'В глазах темнеет. Никто иной, как "Черный Кузнец", почтил нас своим присутсвием',
+              'Я Бот с правами администратора, который реагирует на сообщения двух человек',
+              'Дай мне возможность, хотя бы реагировать с помощью "эмодзи"']
+
+    def make_fraze_hello_alex(self):
+        fraze = random.choice(self.alex)
+        return fraze
+
+    def make_fraze_hello_rus(self):
+        fraze = random.choice(self.rus)
+        return fraze
